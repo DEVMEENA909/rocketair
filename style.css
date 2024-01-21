@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+.nav .nav-left{
+    padding-left: 40px;
+    padding-top: 14px;
+}
+.nav .nav-left img{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+.nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.nav .nav-right button{
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(212, 245, 25);
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+    /* transition: all ease-out .2s; */
+}
+.nav .nav-right button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 0%;
+    z-index: -22;
+    width: 100%;
+    transition: all ease-out .4s;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.nav .nav-right button:hover::before{
+    border-radius: 20px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+.nav .nav-right button:hover{
+    border: .1px solid #DBFF00 ;
+    color: #fff;
+}
+.dots{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.dots:hover{
+    cursor: pointer;
+}
+.dots .up:hover #first{
+    background-color: #DBFF00;
+}
+.dots .up:hover #second{
+    background-color: #DBFF00;
+}
+.dots .down:hover #first1{
+    background-color: #DBFF00;
+}
+.dots .down:hover #second2{
+    background-color: #DBFF00;
+}
+.up{
+    display: flex;
+    margin-top: -5px;
+    gap: 6px;
+}
+.down{
+    margin-top: 7px;
+    display: flex;
+    gap: 6px;
+}
+.up #first{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+.up #second{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+.down #first1{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+.down #second2{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+.lowernav{
+    padding-top: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.lowernav pre{
+    font-size: 80px;
+    font-weight: 600;
+}
+.lowernav .line{
+    height: 1px;
+    width: 530px;
+    background-color: white; 
+    margin-left: 40%;
+    margin-top: -11%;
+    opacity: .9;
+}
+.lowernav #lower{
+    margin-top: -5%;
+}
+.lowernav p{
+    margin-left: 86%;
+    font-size: 12px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+.lowernav p i{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.lowernav sup{
+    font-size: 20px;
+}
+.page2{
+    width: 100%;
+    position: relative;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+.cursor{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    top: 0%;
+    left: 0%;
+    z-index: 90;
+    opacity: 0;
+    transition: all ease .1s;
+}
+.page3{
+    width: 100%;
+    background-color: black;
+}
+.page3 pre{
+    color: white;
+    font-size: 38px;
+    padding-top: 300px;
+    font-weight: 500;
+}
+.page3 .line2{
+    display: flex;
+    gap: 10px;
+    color: white;
+    padding-top: 160px;
+    font-size: 32px;
+    font-weight: 500;
+    padding-left: 60px;
+}
+.page3 #line2{
+    height: 1px;
+    width: 82%;
+    margin-top: 22px;
+    margin-left: 20px;
+    background-color: #2F2F2F;
+}
+.page3 h1{
+    padding-left: 50px;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 280px;
+    font-weight: 500;
+    line-height: 210px;
+    display: inline-block;
+}
+.page3 button{
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #000;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 500;
+    transform: translateY(-100px);
+    margin-left: -50px;
+    z-index: 99;
+}
+.page3 button::before{
+    height: 0%;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    transition: all ease-out .2s;
+    content: "";
+    z-index: -3;
+    background-color: white;
+    position: absolute;
+}
+.page3 button:hover::before{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+.page3 button:hover{
+    color: black;
+}
+.page4{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding-top: 100vh;
+    overflow: hidden;
+    
+}
+.page4 .stands{
+    display: flex;
+    width: 100%;
+}
+.page4 .stand1::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    z-index: -8;
+    transition: all ease-out .2s;
+    background-color: #fff;
+}
+.page4 .stand1:hover::before{
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+.page4 .stand1:hover{
+    color: #000;
+    z-index: 99;
+}
+.page4 .stand1:hover .arrow{
+    border: 1px solid black;
+    background-color: #000;
+    color: white;
+}
+.page4 .stand2::before{
+    content: "";
+    position: absolute;
+    top: 00%;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    z-index: -8;
+    transition: all ease-out .2s;
+    background-color: #fff;
+}
+.page4 .stand2:hover{
+    color: #000;
+    z-index: 99;
+}
+.page4 .stand2:hover .arrow{
+    border: 1px solid black;
+    background-color: #000;
+    color: white;
+}
+.page4 .stand2:hover::before{
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}       
+.page4 .stand3::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    z-index: -8;
+    transition: all ease-out .2s;
+    background-color: #fff;
+}
+.page4 .stand3:hover::before{
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+.page4 .stand3:hover{
+    color: #000;
+    z-index: 99;
+}
+.page4 .stand3:hover .arrow{
+    border: 1px solid black;
+    background-color: #000;
+    color: white;
+}
+.stand4 img{
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+    animation-duration: 39s;
+}
+.stand4 .dott{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 999;
+    transition: all ease .1s;
+    background-color: #fff;
+}
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate:360deg
+    }
+}
+.page4 .stands .arrow{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stand1{
+    height: 105vh;
+    width: 25%;
+    font-size: 40px;
+    font-weight:500; 
+    border: .5px solid #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    position: relative;
+    margin-left: -2px;
+}
+.stand1 i{
+    font-size: 20px;
+}
+.stand2{
+    height: 105vh;
+    width: 25%;
+    position: relative;
+    font-size: 40px;
+    font-weight:500;
+    border: .5px solid #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.stand2 i{
+    font-size: 20px;
+}
+.stand3{
+    height: 105vh;
+    width: 25%;
+    font-size: 40px;
+    position: relative;
+    font-weight:500;
+    border: .5px solid #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.stand3 i{
+    font-size: 20px;
+}
+.stand4{
+    height: 105vh;
+    width: 25%;
+    font-size: 40px;
+    font-weight:500;
+    border: .5px solid #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    position: relative;
+    padding-left: 50px;
+    transition: all ease-out .2s;
+}
+.stand4 i{
+    font-size: 20px;
+}
+.page4 .content{
+    color: #000;
+    padding-top: 45vh;
+    background-color: #fff;
+    font-size: 65px;
+    font-weight: 500;
+}
+.page4 .brands::-webkit-scrollbar{
+    display: none;
+}
+.page4 .brands{
+    padding-top: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding-left: 300px;
+    overflow-x: auto;
+}
+.page4 .brands .brand1{
+    padding-left: 80%;
+    margin-left: 120px;
+}
+.page4 .brands .brand1 pre{
+    padding-top: 30px;
+    line-height: 22px;
+}
+.page4 .brands .brand2 pre{
+    padding-top: 30px;
+    line-height: 22px;
+}
+.page4 .brands .brand3 pre{
+    padding-top: 30px;
+    line-height: 22px;
+}
+.page4 .brands .brand4 pre{
+    padding-top: 30px;
+    line-height: 22px;
+}
+.page4 .brands .brand5 pre{
+    padding-top: 30px;
+    line-height: 22px;
+}
+.page6{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding-top: 300px;
+}
+.page6 .left{
+    height: 140vh;
+    width: 50%;
+    gap: 20px;
+    font-weight: 500;
+    padding-top: 150px;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page6 .left p{
+    text-align: center;
+    line-height: 25px;
+}
+.page6 .left img{
+    height: 300px;
+    width: 300px;
+    padding-top: 30px; padding-bottom: 40px;
+}
+.page6 .left #email::placeholder{
+    background-color: #000;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.page6 .left input{
+    line-height: 60px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000;
+}
+.page6 .left #email{
+    border: none;
+    border-bottom: 1px solid #4B4B4B;
+}
+.page6 .left button{
+    padding: 6px 18px;
+    border: 1px solid rgb(223, 216, 216);
+    color: white;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: all ease .5s;
+}
+.page6 .left button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.page6 .right{
+    height: 140vh;
+    width: 50%;
+    padding-bottom: 110px;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid white;
+    overflow: hidden;
+}
+.page6 .right p{
+    height: 100px;
+    width: 50vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+    font-size: 35px;
+    font-weight: 500;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    z-index: 999;
+    transition: all ease-out .4s;
+}
+.page6 .right p:hover{
+    color: #000;
+    z-index: 99;
+    font-size: 40px;
+}
+.page6 .right p::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    z-index: -1;
+    transition: all ease-out .2s;
+    background-color: #ffffff;
+}
+.page6 .right p:hover::before{
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+.page6 .right .icon{
+    width: 50%;
+    margin-right: 313px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page6 .right .icon .text{
+    padding-left: 5px;
+}
+.page6 .right .icon .text p{
+    font-size: 19px;
+    margin-left: 20px;
+    color:rgb(187, 186, 186) ;
+    padding-left: 160px;
+    border: none;
+}
+.page6 .right .icon .text p:hover::before{
+    height: 0;
+    width: 0;
+    color: rgb(187, 186, 186);
+    background-color: #000;
+}
+.page6 .right .icon .icons{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.page6 .right .icon .icons .circle{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all ease .5s;
+}
+.page6 .right .icon .icons .circle:hover{
+    color: black;
+    background-color: #fff;
+}
