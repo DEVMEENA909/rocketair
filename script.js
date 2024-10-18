@@ -1,11 +1,21 @@
-gsap.registerPlugin(ScrollTrigger);
+function loco(){
+    gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
 const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".main"),
-  smooth: true
-});
+    el: document.querySelector(".main"),
+    smooth: true,
+    multiplier: 0.5,
+    lerp: 0.06,
+    tablet: {
+      smooth: true
+    },
+    smartphone: {
+      smooth: true
+    }
+  });
+
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -26,7 +36,9 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+}
 
+loco()
 
 function curs(){
     var cursor = document.querySelector(".cursor")

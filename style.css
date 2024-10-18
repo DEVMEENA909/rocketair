@@ -1,12 +1,30 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "gilroy";
+    font-family: Font1;
     box-sizing: border-box;
 }
 html , body{
     height: 100%;
     width: 100%;
+    background: #000;
+}
+
+@font-face {
+    font-family: Font1;
+    src: url(./620e5796f94823392179d875_AeonikPro-Regular.ttf);
+}
+@font-face {
+    font-family: Font2;
+    src: url(./620e57b046aeb142afb3c373_MaisonNeueMonoWEB-Regular.ttf);
+}
+@font-face {
+    font-family: Font3;
+    src: url(./6232160eeef427e45a261dff_AeonikMono-Regular.ttf);
+}
+
+.main{
+    z-index: 999;
 }
 .nav{
     display: flex;
@@ -39,7 +57,7 @@ html , body{
     background-color: rgb(212, 245, 25);
     font-weight: 500;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     /* transition: all ease-out .2s; */
 }
 .nav .nav-right button::before{
@@ -48,7 +66,7 @@ html , body{
     top: 50%;
     left: 0%;
     height: 0%;
-    z-index: -22;
+    z-index: -1 ;
     width: 100%;
     transition: all ease-out .4s;
     background-color: rgb(0, 0, 0);
@@ -119,21 +137,42 @@ html , body{
     background-color: white;
 }
 .lowernav{
-    padding-top: 20px;
+    display: flex;
+    padding-top: 2dvh;
+    padding-left: 4dvh;
+    height: 64dvh;
     width: 100%;
-    background-color: black;
+   background-color: black;
     color: white;
+    position: relative;
 }
-.lowernav pre{
-    font-size: 80px;
-    font-weight: 600;
+.lowernav .part1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height:fit-content;
+    justify-content: top;
+}
+.lowernav .part2{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    height:fit-content;
+    justify-content: top;
+}
+.lowernav h1{
+    width: fit-content;
+    font-size: 5.7vw;
+    font-weight: 500;
+}
+.lowenav .part1 .initial{
+    display: flex;
+    flex-direction: row;
 }
 .lowernav .line{
-    height: 1px;
-    width: 530px;
+    height: .1vh;
+    width: 50vw;
     background-color: white; 
-    margin-left: 40%;
-    margin-top: -11%;
     opacity: .9;
 }
 .lowernav #lower{
@@ -141,8 +180,7 @@ html , body{
 }
 .lowernav p{
     margin-left: 86%;
-    font-size: 12px;
-    margin-top: -50px;
+    font-size: .8vw;
     padding-bottom: 20px;
 }
 .lowernav p i{
@@ -524,6 +562,7 @@ video{
     align-items: center;
     justify-content: flex-start;
     background-color: #000;
+    outline: none;
 }
 .page6 .left #email{
     border: none;
