@@ -36,6 +36,23 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+    var nav = document.querySelector(".nav") 
+    let lastScrollTop = 0;
+    locoScroll.on('scroll',(obj)=>{
+        let scrollY = obj.scroll.y
+          if(scrollY === 0){
+              nav.style.backgroundColor = "transparent"
+              nav.style.transform = "translateY(0%)"
+          }
+          else if(scrollY>lastScrollTop){
+            nav.style.transform = "translateY(-100%)"
+          }
+          else if(scrollY<lastScrollTop){
+            nav.style.backgroundColor = "transparent"
+            nav.style.transform = "translateY(0%)"
+          }
+          lastScrollTop = scrollY
+})
 }
 
 loco()

@@ -29,18 +29,21 @@ html , body{
 .nav{
     display: flex;
     align-items: center;
+    position: fixed;
     justify-content: space-between;
     padding: 10px;
     background-color: black;
+    height: fit-content;
+    z-index: 99;
+    width: 100vw;
+    transition: all ease-in-out .2s;
 }
 .nav .nav-left{
     padding-left: 40px;
     padding-top: 14px;
 }
-.nav .nav-left img{
-    height: 30px;
-    width: 30px;
-    background-color: black;
+.nav .nav-left #nav-img{
+    mix-blend-mode: difference;
 }
 .nav .nav-right{
     display: flex;
@@ -138,8 +141,8 @@ html , body{
 }
 .lowernav{
     display: flex;
-    padding-top: 2dvh;
-    padding-left: 4dvh;
+    padding-top: 8dvh;
+    padding-left: 6dvh;
     height: 64dvh;
     width: 100%;
    background-color: black;
@@ -162,7 +165,7 @@ html , body{
 }
 .lowernav h1{
     width: fit-content;
-    font-size: 5.7vw;
+    font-size: 5.2vw;
     font-weight: 500;
 }
 .lowenav .part1 .initial{
@@ -194,6 +197,7 @@ html , body{
 .page2{
     width: 100%;
     position: relative;
+    pointer-events:all;
 }
 video{
     height: 100%;
