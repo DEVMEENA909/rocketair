@@ -46,10 +46,12 @@ ScrollTrigger.refresh();
           }
           else if(scrollY>lastScrollTop){
             nav.style.transform = "translateY(-100%)"
+            nav.style.mixBlendMode = "difference"
           }
           else if(scrollY<lastScrollTop){
             nav.style.backgroundColor = "transparent"
             nav.style.transform = "translateY(0%)"
+            nav.style.mixBlendMode = "difference"
           }
           lastScrollTop = scrollY
 })

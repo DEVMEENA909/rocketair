@@ -43,7 +43,7 @@ html , body{
     padding-top: 14px;
 }
 .nav .nav-left #nav-img{
-    mix-blend-mode: difference;
+    color: black;
 }
 .nav .nav-right{
     display: flex;
