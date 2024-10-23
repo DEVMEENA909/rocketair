@@ -530,18 +530,21 @@ video{
     padding-top: 300px;
 }
 .page6 .left{
-    height: 140vh;
+    height: 94vh;
     width: 50%;
     gap: 20px;
     font-weight: 500;
-    padding-top: 150px;
     background-color: #000;
     color: #fff;
-    border-top: 1px solid white;
+    border-top: 1px solid #979797;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.page6 .left h1{
+    font-size: 4vw;
+    font-weight: 500;
 }
 .page6 .left p{
     text-align: center;
@@ -574,7 +577,7 @@ video{
 }
 .page6 .left button{
     padding: 6px 18px;
-    border: 1px solid rgb(223, 216, 216);
+    border: 1px solid #979797;
     color: white;
     background-color: #000;
     font-size: 18px;
@@ -588,17 +591,16 @@ video{
     background-color: #fff;
 }
 .page6 .right{
-    height: 140vh;
+    height: 94vh;
     width: 50%;
-    padding-bottom: 110px;
     background-color: #000;
     color: #fff;
-    border-top: 1px solid white;
+    border-top: .2px solid #979797;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid white;
+    border-left: .2px solid #979797;
     overflow: hidden;
 }
 .page6 .right p{
@@ -608,12 +610,12 @@ video{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 50px;
-    font-size: 35px;
+    padding-left: 1.2vw;
+    font-size: 2.2vw;
     font-weight: 500;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    z-index: 999;
+    border-top: .2px solid #979797;
+    border-bottom: .2px solid #979797;
+    z-index: 9;
     transition: all ease-out .4s;
 }
 .page6 .right p:hover{
@@ -639,21 +641,19 @@ video{
     width: 100%;
 }
 .page6 .right .icon{
-    width: 50%;
-    margin-right: 313px;
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    gap:24vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.page6 .right .icon .text{
-    padding-left: 5px;
-}
 .page6 .right .icon .text p{
-    font-size: 19px;
-    margin-left: 20px;
+    font-size: .9vw;
     color:rgb(187, 186, 186) ;
-    padding-left: 160px;
     border: none;
+    align-items: right;
 }
 .page6 .right .icon .text p:hover::before{
     height: 0;
@@ -665,14 +665,13 @@ video{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 30px;
-    font-size: 25px;
+    font-size: 1.3vw;
 }
 .page6 .right .icon .icons .circle{
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    border: 1px solid #868686;
+    border: .2px solid #868686;
     display: flex;
     align-items: center;
     justify-content: center;
