@@ -483,24 +483,31 @@ video{
     font-weight: 500;
 }
 .page4 .brands::-webkit-scrollbar{
-    display: none;
+        /* --swiper-scrollbar-border-radius: 10px;
+        --swiper-scrollbar-top: auto;
+        --swiper-scrollbar-bottom: 4px;
+        --swiper-scrollbar-left: auto;
+        --swiper-scrollbar-right: 4px;
+        --swiper-scrollbar-sides-offset: 1%;
+        --swiper-scrollbar-bg-color: rgba(222, 15, 15, 0.982);
+        --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
+        --swiper-scrollbar-size: 40px;
+        z-index: 99;
+        display: inline-block;
+        position: absolute; */
 }
 .page4 .brands{
     padding-top: 150px;
     font-size: 14px;
     font-weight: 500;
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left:2% ;
     gap: 90px;
-    padding-left: 300px;
     overflow-x: auto;
-}
-.page4 .brands .brand1{
-    padding-left: 80%;
-    margin-left: 120px;
 }
 .page4 .brands .brand1 pre{
     padding-top: 30px;

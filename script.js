@@ -59,6 +59,17 @@ ScrollTrigger.refresh();
 
 loco()
 
+function Swiper(){
+    const swiper = new Swiper('.page4 .brands', {
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: false,
+        },
+      });
+}
+
+Swiper()
+
 function curs(){
     var cursor = document.querySelector(".cursor")
     var video = document.querySelector("video")
