@@ -497,36 +497,24 @@ video{
     background-color: #FFFFFF;
     color: #000;
     overflow-x: auto;
+    padding-left:2% ;
+    display: flex;
 }
 .page4 .swiper-wrapper{
     display: flex;
-    padding-top: 150px;
+    flex-direction: row;
+    height: 20vh;
+    padding-top: 6vw;
     font-size: 14px;
     font-weight: 500;
     align-items: center;
     justify-content: start;
-    padding-left:2% ;
     overflow-x: auto;
 }
-.page4 .brands .brand1 pre{
-    padding-top: 30px;
-    line-height: 22px;
-}
-.page4 .brands .brand2 pre{
-    padding-top: 30px;
-    line-height: 22px;
-}
-.page4 .brands .brand3 pre{
-    padding-top: 30px;
-    line-height: 22px;
-}
-.page4 .brands .brand4 pre{
-    padding-top: 30px;
-    line-height: 22px;
-}
-.page4 .brands .brand5 pre{
-    padding-top: 30px;
-    line-height: 22px;
+.page4 .brands .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .page6{
     width: 100%;

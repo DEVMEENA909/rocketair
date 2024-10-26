@@ -60,7 +60,8 @@ ScrollTrigger.refresh();
 loco()
 
 function Swiper(){
-    const swiper = new Swiper('.brands', {
+    const swiper = new Swiper('.page4 .brands', {
+        direction: 'horizontal',
         loop: true,
       
         // If we need pagination
