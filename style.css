@@ -483,7 +483,7 @@ video{
     font-weight: 500;
 }
 .page4 .brands::-webkit-scrollbar{
-        /* --swiper-scrollbar-border-radius: 10px;
+        --swiper-scrollbar-border-radius: 10px;
         --swiper-scrollbar-top: auto;
         --swiper-scrollbar-bottom: 4px;
         --swiper-scrollbar-left: auto;
@@ -492,21 +492,20 @@ video{
         --swiper-scrollbar-bg-color: rgba(222, 15, 15, 0.982);
         --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
         --swiper-scrollbar-size: 40px;
-        z-index: 99;
-        display: inline-block;
-        position: absolute; */
 }
 .page4 .brands{
+    background-color: #FFFFFF;
+    color: #000;
+    overflow-x: auto;
+}
+.page4 .swiper-wrapper{
+    display: flex;
     padding-top: 150px;
     font-size: 14px;
     font-weight: 500;
-    background-color: #FFFFFF;
-    color: #000;
-    display: flex;
     align-items: center;
     justify-content: start;
     padding-left:2% ;
-    gap: 90px;
     overflow-x: auto;
 }
 .page4 .brands .brand1 pre{
