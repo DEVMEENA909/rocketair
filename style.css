@@ -482,7 +482,7 @@ video{
     font-size: 65px;
     font-weight: 500;
 }
-.page4 .brands::-webkit-scrollbar{
+/* .page4 .brands::-webkit-scrollbar{
         --swiper-scrollbar-border-radius: 10px;
         --swiper-scrollbar-top: auto;
         --swiper-scrollbar-bottom: 4px;
@@ -492,7 +492,7 @@ video{
         --swiper-scrollbar-bg-color: rgba(222, 15, 15, 0.982);
         --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
         --swiper-scrollbar-size: 40px;
-}
+} */
 .page4 .brands{
     background-color: #FFFFFF;
     color: #000;
