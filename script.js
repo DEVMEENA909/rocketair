@@ -59,28 +59,28 @@ ScrollTrigger.refresh();
 
 loco()
 
-function Swiper(){
-    const swiper = new Swiper('.page4 .brands', {
-        direction: 'horizontal',
-        loop: true,
+// function Swiper(){
+//     const swiper = new Swiper('.page4 .brands', {
+//         direction: 'horizontal',
+//         loop: true,
       
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+//         // If we need pagination
+//         pagination: {
+//           el: '.swiper-pagination',
+//         },
       
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+//         // Navigation arrows
+//         navigation: {
+//           nextEl: '.swiper-button-next',
+//           prevEl: '.swiper-button-prev',
+//         },
       
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-}
+//         // And if we need scrollbar
+//         scrollbar: {
+//           el: '.swiper-scrollbar',
+//         },
+//       });
+// }
 
 // Swiper()
 
