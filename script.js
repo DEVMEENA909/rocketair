@@ -82,7 +82,7 @@ function Swiper(){
       });
 }
 
-Swiper()
+// Swiper()
 
 function curs(){
     var cursor = document.querySelector(".cursor")
